@@ -108,6 +108,7 @@ plt.savefig('./2.png')
 # sns.set_style("darkgrid")
 sns.lmplot(x='승하차총승객수', y='확진자 수', data=add_coronic_last, height=8, scatter_kws={'color': 'red'}, line_kws={'color': 'red'})
 plt.title("상관관계 분석", size=15)
+plt.legend(loc = 'upper right')
 plt.show()
 plt.savefig('./3.png')
 
