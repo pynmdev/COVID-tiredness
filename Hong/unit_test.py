@@ -54,12 +54,12 @@ print(add_coronic_new)
 draw1 = sns.lineplot(x='사용일자',
                   y='승하차총승객수',
                   data=add_coronic_new,
-                  color='blue')
+                  color='#358791')
 draw2 = draw1.twinx()   # 두 그래프 합치기
 draw2 = sns.lineplot(x='사용일자',
                   y='일일 신규확진자수',
                   data=add_coronic_new,
-                  color='red')
+                  color='#C75252')
 plt.show()  # 실제 그래프 출력
 plt.savefig('./1.png')
 
